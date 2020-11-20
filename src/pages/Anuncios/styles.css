@@ -1,0 +1,85 @@
+.dashboard-container-anuncio {
+	width: 100vw;
+	max-width: 95vw;
+	padding: 0 2vw;
+	margin: 4vh 2vw;
+}
+
+.dashboard-container-anuncio header {
+	display: flex;
+	align-items: center;
+}
+
+.dashboard-container-anuncio header span {
+	font-size: 38px;
+	font-weight: bold;
+	color: #30b18a;
+}
+
+.vl {
+	margin: 4vh 0;
+	border-left: 2px solid #c2c2c2;
+	height: 4vh;
+}
+
+nav {
+	width: 17vw;
+	max-width: 30vw;
+	height: 9vh;
+	max-height: 10vh;
+	margin-top: -2vh;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.link-route {
+	font-size: 22px;
+	text-decoration: none;
+	font-weight: 600;
+	color: #515151;
+}
+
+.link-route:hover {
+	color: #30b18a;
+}
+
+.link-route.active:hover {
+	color: #4bd3aa;
+}
+
+.link-route.active {
+	color: #30b18a;
+}
+
+.message-under-nav {
+	font-weight: 400;
+	color: #8d8d8d;
+}
+
+.dashboard-content-anuncio {
+	margin-top: 2vh;
+	display: flex;
+	justify-content: row;
+	align-items: center;
+}
+
+.logo-img {
+	width: 40vw;
+	max-width: 40vw;
+	height: auto;
+}
+
+.cards-anuncio {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	margin-right: 2vw;
+}

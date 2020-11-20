@@ -11,14 +11,13 @@ export default function Card (props) {
                 <div className="card-info">
                     <div className="avatar"></div>
                     <div className="info-empresa">
-                        {/* Pega da api */}
                         <span><b>{props.companyName}</b></span>
-                        <p>Suporta:{" "}<b>{props.maxWeight / 1000}T</b></p>
+                        <p>Peso da Carga:{" "}<b>{props.weight / 1000}T</b></p>
                     </div>
                 </div>
                 <div className="preco-info">
                     <span><b>{props.price}R$</b></span>
-                    <p><FiMapPin color="#777777" size={12} />{" "}distância: {"  "}<b>{props.distance} KM</b></p>
+                    <p><FiMapPin color="#777777" size={12} />{" "}Distância: {"  "}<b>{props.distance} KM</b></p>
                 </div>
             </div>
             <hr className="hr" />
@@ -57,5 +56,5 @@ Card.propTypes = {
     distance: PropTypes.number,
     destination: PropTypes.string,
     departure: PropTypes.string,
-    maxWeight: PropTypes.number
+    weight: PropTypes.number
 }

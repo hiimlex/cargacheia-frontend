@@ -1,0 +1,57 @@
+.card {
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+	border-radius: 10px;
+	background-color: #fff;
+	width: 50vw;
+	max-width: 52vw;
+	margin-bottom: 2vh;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	cursor: pointer;
+}
+
+.card:hover {
+	margin-bottom: 30px;
+}
+
+.top {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 3vh;
+}
+
+.destination {
+	flex: 1;
+	font-size: 30px;
+	font-weight: 100;
+	color: #8d8d8d;
+}
+
+.return-date {
+	flex: 1;
+	font-size: 25px;
+	text-align: right;
+}
+
+.bottom {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+}
+
+.vehicle-container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.vehicle-info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

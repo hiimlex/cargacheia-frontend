@@ -2,7 +2,9 @@
 	width: 100vw;
 	max-width: 95vw;
 	padding: 0 2vw;
-	margin: 4vh 2vw;
+    margin: 4vh 2vw;
+    height: 1vh;
+    max-height: 95vh;
 }
 
 .dashboard-container header {
@@ -23,8 +25,8 @@
 }
 
 nav {
-	width: 17vw;
-	max-width: 30vw;
+	width: 22vw;
+	max-width: 22vw;
 	height: 9vh;
 	max-height: 10vh;
 	margin-top: -2vh;
@@ -74,11 +76,15 @@ nav ul {
 	height: auto;
 }
 
+.img-container {
+	flex: 1;
+}
+
 .cards {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	margin-right: 2vw;
+    margin-right: 2vw;
 }

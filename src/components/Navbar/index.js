@@ -11,8 +11,17 @@ export default function Navbar() {
 		function onRouteChange() {
 			if (location.pathname === "/") {
 				setMessage("Listando todos os anúncios!")
-			} else if (location.pathname === "/cadastrar") {
-				setMessage("Informe os dados para cadastrar seu anúncio!")
+				return;
+			}
+			
+			if (location.pathname === "/cadastrar") {
+				setMessage("Informe os dados para cadastrar uma viagem!")
+				return;
+			}
+
+			if (location.pathname === "/pedidos") {
+				setMessage("Esses são todos os pedidos do anúncio!")
+				return;
 			}
 		};
 
@@ -26,9 +35,9 @@ export default function Navbar() {
 		<nav>
 			<ul>
 				<li>
-					<Link className={location.pathname === "/" ? "link-route active" : "link-route"} to="/">
-						Anúncios
-						</Link>
+					<Link className={location.pathname === "/" || location.pathname === '/pedidos' ? "link-route active" : "link-route"} to="/">
+						{location.pathname === '/pedidos' ? "Anúncios / Pedidos" : 'Anúncios' }
+					</Link>
 				</li>
 				<div className="vl"></div>
 				<li>
@@ -37,7 +46,7 @@ export default function Navbar() {
 						to="/cadastrar"
 					>
 						Cadastrar
-						</Link>
+					</Link>
 				</li>
 			</ul>
 		</nav>
