@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
+import { Navbar, Button, Input } from "../../components/";
 import "./styles.css";
 
 export default function Viagem() {
@@ -8,15 +8,19 @@ export default function Viagem() {
 		<div className="anunciar-container">
 			<Navbar />
 
-			<div>
-				<span>Cadastrar Viagem</span>
+			<div className="cadastro-container">
+				<hr />
+				<br />
+				<span className="title">Cadastrar Viagem</span>
 
-				<form>
-					<div>
-					<span></span>
-					<input />
-					</div>
-				</form>
+				<div className="form">
+					<Input label="Destino da Viagem" placeholder="Ex: Fortaleza" />
+					<Input label="Data de Volta" placeholder="Formato: dd/mm/aaaa" />
+				</div>
+
+				<Input label="Veículo Utilizado" />
+
+				<Button label="Cadastrar" />
 			</div>
 		</div>
 	);

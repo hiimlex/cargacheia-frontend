@@ -9,6 +9,8 @@ export default function Veiculos() {
 			<Navbar />
 
 			<div className="cadastro-container">
+				<hr />
+				<br />
 				<span className="title">Cadastrar Veículo</span>
 
 				<div className="form">
