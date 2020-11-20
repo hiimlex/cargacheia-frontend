@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Input } from "./../../components";
+import { Navbar, Input, Button } from "./../../components";
 import "./styles.css";
 
 export default function Veiculos() {
@@ -22,6 +22,8 @@ export default function Veiculos() {
 				</div>
 
 				<Input label="Placa do Veículo" />
+
+				<Button label="Cadastrar" />
 			</div>
 		</div>
 	);

@@ -12,8 +12,9 @@
 	cursor: pointer;
 }
 
-.card:hover {
+.card-anuncio:hover {
 	margin-bottom: 30px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
 .top {

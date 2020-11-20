@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./styles.css";
 import { Navbar, CardAnuncio } from "../../components";
 
+import Loader from 'react-loader-spinner';
+
 import { useHistory } from 'react-router-dom';
 
 import { AnuncioRoutes } from './../../network';
@@ -33,20 +35,31 @@ export default function Dashboard() {
 			<div className="dashboard-content-anuncio">
 				{/* Fazer Scrollview com os cards mantendo a imagem do lado parada no web, no mobile a imagem vai ser retirada */}
 				<div className="cards-anuncio">
-					{loading ? <span>loading...</span> : (
+					{loading ? (
+						<Loader
+						type="Puff"
+						color="#00BFFF"
+						height={100}
+						width={100}
+						timeout={3000} //3 secs
+					 />
+					) : (
 						anuncios.map((anuncio) => {
-							<CardAnuncio 
-							onClick={() => history.push('/pedidos')}
-							destination={anuncio.destino}
-							returnDate={anuncio.data_volta}
-							vehicle={{
-								tipo_veiculo: "VUC",
-								comprimento: "6,3",
-								largura_comportada: "2,3",
-								peso_bruto_maximo: "3000",
-								placa: "HVL-0121"	
-							}}
-							/>
+							return (
+								<CardAnuncio 
+								onClick={() => history.push(`/pedidos/${anuncio.id}`)}
+								destination={anuncio.destino}
+								returnDate={anuncio.data_volta}
+								vehicle={{
+									tipo_veiculo: "VUC",
+									comprimento: "6,3",
+									largura_comportada: "2,3",
+									peso_bruto_maximo: "3000",
+									placa: "HVL-0121"	
+								}}
+								/>
+							)
+							
 						})
 					)}
 				</div>

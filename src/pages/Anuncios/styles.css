@@ -74,6 +74,13 @@ nav ul {
 	height: auto;
 }
 
+@media (max-width: 680px) 
+{
+	.logo-img {
+		display: none;
+	}
+}
+
 .cards-anuncio {
 	flex: 1;
 	display: flex;

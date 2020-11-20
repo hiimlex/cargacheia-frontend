@@ -8,7 +8,7 @@ function App() {
 			<Switch>
 				<Route path="/" exact component={Anuncios} />
 				<Route path="/cadastrar" component={Cadastrar} />
-				<Route path="/pedidos" component={Pedidos} />
+				<Route path="/pedidos/:id" component={Pedidos} />
 				<Route path="/veiculos" component={Veiculos} />
 			</Switch>
 		</Router>

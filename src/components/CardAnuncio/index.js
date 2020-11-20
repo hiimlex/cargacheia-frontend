@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FiMapPin, FiFlag } from 'react-icons/fi';
+import { FiMapPin } from 'react-icons/fi';
 import './styles.css';
 
 export default function CardAnuncio (props) {
