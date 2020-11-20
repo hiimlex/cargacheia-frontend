@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { FiMapPin, FiFlag } from "react-icons/fi";
-import Navbar from "../../components/Navbar"
+import { Navbar, Card } from "../../components"
 
 import logoImg from "../../assets/logo.svg";
 
@@ -15,180 +15,21 @@ export default function Dashboard() {
 			<div className="dashboard-content">
 				{/* Fazer Scrollview com os cards mantendo a imagem do lado parada no web, no mobile a imagem vai ser retirada */}
 				<div className="cards">
-					<div className="card">
-						<div className="card-container">
-							<div className="info-anuncio">
-								<div className="card-info">
-									<div className="avatar"></div>
-									<div className="info-empresa">
-										{/* Pega da api */}
-										<span>
-											<b>
-												nome da
-												empresa
-											</b>
-										</span>
-										<p>
-											Suporta:{" "}
-											<b>4T</b>
-										</p>
-									</div>
-								</div>
-								<div className="preco-info">
-									<span>
-										<b>30R$</b>
-									</span>
-									<p>
-										<FiMapPin
-											color="#777777"
-											size={12}
-										></FiMapPin>{" "}
-										distância: {"  "}
-										<b>102 KM</b>
-									</p>
-								</div>
-							</div>
-							<hr className="hr" />
-							<div className="info-position">
-								<div className="route-trace">
-									<FiFlag
-										size={20}
-										color="#30B18A"
-										style={{
-											fontWeight:
-												"bold",
-										}}
-									></FiFlag>{" "}
-									<span
-										style={{
-											color:
-												"#30b18a",
-											fontSize: 20,
-											marginBottom: -12,
-										}}
-									>
-										•
-									</span>
-									<span
-										style={{
-											color:
-												"#30b18a",
-											fontSize: 20,
-										}}
-									>
-										•
-									</span>
-									<FiMapPin
-										size={20}
-										color="#30B18A"
-										style={{
-											fontWeight:
-												"bold",
-										}}
-									></FiMapPin>
-								</div>
-								<div className="tracker-info">
-									<span>
-										<b>
-											Local de
-											Partida
-										</b>
-									</span>
-									<hr className="hr" />
-									<span>
-										<b>Destino</b>
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className="card">
-						<div className="card-container">
-							<div className="info-anuncio">
-								<div className="card-info">
-									<div className="avatar"></div>
-									<div className="info-empresa">
-										{/* Pega da api */}
-										<span>
-											<b>
-												nome da
-												empresa
-											</b>
-										</span>
-										<p>
-											Suporta:{" "}
-											<b>4T</b>
-										</p>
-									</div>
-								</div>
-								<div className="preco-info">
-									<span>
-										<b>30R$</b>
-									</span>
-									<p>
-										<FiMapPin
-											color="#777777"
-											size={12}
-										></FiMapPin>{" "}
-										distância: {"  "}
-										<b>102 KM</b>
-									</p>
-								</div>
-							</div>
-							<hr className="hr" />
-							<div className="info-position">
-								<div className="route-trace">
-									<FiFlag
-										size={20}
-										color="#30B18A"
-										style={{
-											fontWeight:
-												"bold",
-										}}
-									></FiFlag>{" "}
-									<span
-										style={{
-											color:
-												"#30b18a",
-											fontSize: 20,
-											marginBottom: -12,
-										}}
-									>
-										•
-									</span>
-									<span
-										style={{
-											color:
-												"#30b18a",
-											fontSize: 20,
-										}}
-									>
-										•
-									</span>
-									<FiMapPin
-										size={20}
-										color="#30B18A"
-										style={{
-											fontWeight:
-												"bold",
-										}}
-									></FiMapPin>
-								</div>
-								<div className="tracker-info">
-									<span>
-										<b>
-											Local de
-											Partida
-										</b>
-									</span>
-									<hr className="hr" />
-									<span>
-										<b>Destino</b>
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
+					<Card 
+					companyName="Nome da Empresa" 
+					departure="Local de Partida" 
+					destination="Destino"
+					distance={50}
+					price={20}
+					/>
+
+					<Card 
+					companyName="Nome da Empresa" 
+					departure="Local de Partida" 
+					destination="Destino"
+					distance={50}
+					price={20}
+					/>
 				</div>
 				<div>
 					<img

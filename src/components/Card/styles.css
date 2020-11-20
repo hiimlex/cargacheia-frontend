@@ -1,0 +1,107 @@
+.card {
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+	border-radius: 10px;
+	background-color: #fff;
+	width: 50vw;
+	max-width: 52vw;
+	margin-bottom: 2vh;
+}
+
+.card:hover {
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+	padding: 1vh 1vw;
+	margin: 1vw;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.info-anuncio {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.card-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 17vw;
+	max-width: 20vw;
+}
+
+.info-empresa {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 9vh;
+	max-height: 9vh;
+}
+
+.info-empresa span b {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.info-empresa p {
+	color: #777777;
+}
+
+.info-empresa p b {
+	color: #000;
+}
+
+.hr {
+	border: 1px solid #c2c2c2;
+	margin-top: 2vh;
+	margin-right: -2vw;
+}
+
+.avatar {
+	width: 64px;
+	max-width: 64px;
+	max-height: 64px;
+	height: 64px;
+	background-color: #c4c4c4;
+	border-radius: 10px;
+}
+
+.preco-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 9vh;
+	max-height: 9vh;
+}
+
+.preco-info span {
+	text-align: right;
+}
+
+.preco-info p {
+	text-align: left;
+	color: #777777;
+	font-size: 16px;
+}
+
+.info-position {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2vh;
+}
+
+.route-trace {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tracker-info {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 42vw;
+}
