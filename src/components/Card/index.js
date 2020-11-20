@@ -13,7 +13,7 @@ export default function Card (props) {
                     <div className="info-empresa">
                         {/* Pega da api */}
                         <span><b>{props.companyName}</b></span>
-                        <p>Suporta:{" "}<b>4T</b></p>
+                        <p>Suporta:{" "}<b>{props.maxWeight / 1000}T</b></p>
                     </div>
                 </div>
                 <div className="preco-info">
@@ -56,5 +56,6 @@ Card.propTypes = {
     price: PropTypes.number,
     distance: PropTypes.number,
     destination: PropTypes.string,
-    departure: PropTypes.string
+    departure: PropTypes.string,
+    maxWeight: PropTypes.number
 }

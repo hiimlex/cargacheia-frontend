@@ -16,17 +16,19 @@ export default function Dashboard() {
 				{/* Fazer Scrollview com os cards mantendo a imagem do lado parada no web, no mobile a imagem vai ser retirada */}
 				<div className="cards">
 					<Card 
+					maxWeight={4000}
 					companyName="Nome da Empresa" 
-					departure="Local de Partida" 
-					destination="Destino"
+					departure="Juazeiro do Norte" 
+					destination="Fortaleza"
 					distance={50}
 					price={20}
 					/>
 
 					<Card 
+					maxWeight={300}
 					companyName="Nome da Empresa" 
-					departure="Local de Partida" 
-					destination="Destino"
+					departure="Natal" 
+					destination="Rio de Janeiro"
 					distance={50}
 					price={20}
 					/>
