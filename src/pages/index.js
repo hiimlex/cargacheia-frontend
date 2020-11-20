@@ -1,9 +1,11 @@
 import Anuncios from './Anuncios';
-import Cadastrar from './Cadastrar';
+import Cadastrar from './Viagem';
 import Pedidos from './Pedidos';
+import Veiculos from './Veiculos';
 
 export {
     Anuncios,
     Cadastrar,
-    Pedidos
+    Pedidos,
+    Veiculos
 }

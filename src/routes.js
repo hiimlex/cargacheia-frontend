@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Anuncios, Cadastrar, Pedidos } from './pages';
+import { Anuncios, Cadastrar, Pedidos, Veiculos } from './pages';
 
 function App() {
 	return (
@@ -9,6 +9,7 @@ function App() {
 				<Route path="/" exact component={Anuncios} />
 				<Route path="/cadastrar" component={Cadastrar} />
 				<Route path="/pedidos" component={Pedidos} />
+				<Route path="/veiculos" component={Veiculos} />
 			</Switch>
 		</Router>
 	);

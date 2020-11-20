@@ -23,6 +23,11 @@ export default function Navbar() {
 				setMessage("Esses são todos os pedidos do anúncio!")
 				return;
 			}
+
+			if (location.pathname === "/veiculos") {
+				setMessage("Informe os dados para cadastrar um novo veículo!")
+				return;
+			}
 		};
 
 		onRouteChange();
@@ -36,7 +41,7 @@ export default function Navbar() {
 			<ul>
 				<li>
 					<Link className={location.pathname === "/" || location.pathname === '/pedidos' ? "link-route active" : "link-route"} to="/">
-						{location.pathname === '/pedidos' ? "Anúncios / Pedidos" : 'Anúncios' }
+						Anúncios
 					</Link>
 				</li>
 				<div className="vl"></div>
@@ -45,7 +50,16 @@ export default function Navbar() {
 						className={location.pathname === "/cadastrar" ? "link-route active" : "link-route"}
 						to="/cadastrar"
 					>
-						Cadastrar
+						Cadastrar Viagem
+					</Link>
+				</li>
+				<div className="vl"></div>
+				<li>
+					<Link
+						className={location.pathname === "/veiculos" ? "link-route active" : "link-route"}
+						to="/veiculos"
+					>
+						Cadastrar Veículo
 					</Link>
 				</li>
 			</ul>

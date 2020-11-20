@@ -5,7 +5,7 @@ import './styles.css';
 
 export default function CardAnuncio (props) {
     return (
-    <div onClick={props.onClick} className="card">
+    <div onClick={props.onClick} className="card-anuncio">
         <div className="top">
             <div className="destination">
                 <b><FiMapPin style={{ fontSize: 25 }} /> DESTINO:</b> {props.destination}
