@@ -1,0 +1,17 @@
+.anunciar-container {
+	width: 100vw;
+	max-width: 95vw;
+	padding: 0 2vw;
+	margin: 4vh 2vw;
+}
+
+.anunciar-container header {
+	display: flex;
+	align-items: center;
+}
+
+.anunciar-container header span {
+	font-size: 38px;
+	font-weight: bold;
+	color: #30b18a;
+}

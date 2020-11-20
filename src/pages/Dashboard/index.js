@@ -1,43 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./styles.css";
-import { Link, useLocation } from "react-router-dom";
 import { FiMapPin, FiFlag } from "react-icons/fi";
+import Navbar from "../../components/Navbar"
 
 import logoImg from "../../assets/logo.svg";
 
 // Fazer as requisições para pegar os dados e jogar dentro do card com useState e etc
 
 export default function Dashboard() {
-	// O ideal era usar redux ou deixar tudo em uma rota só para
-	// n ficar trafegando dados de um lado pro outro
-	// Porém ce faz como quiser, o template do css é só sair copiando e colando.
-	// E checando se ficar igual, se quebrar tu vai ajustando de acordo com os viewport.
-	const message = "Listando todos os anúncios!";
 
 	return (
 		<div className="dashboard-container">
-			<header>
-				<span>Dashboard</span>
-			</header>
-			<nav>
-				<ul>
-					<li>
-						<Link className="link-route active" to="/">
-							Anúncios
-						</Link>
-					</li>
-					<div className="vl"></div>
-					<li>
-						<Link
-							className="link-route"
-							to="/cadastrar"
-						>
-							Cadastrar
-						</Link>
-					</li>
-				</ul>
-			</nav>
-			<span className="message-under-nav">{message}</span>
+			<Navbar />
 			<div className="dashboard-content">
 				{/* Fazer Scrollview com os cards mantendo a imagem do lado parada no web, no mobile a imagem vai ser retirada */}
 				<div className="cards">
