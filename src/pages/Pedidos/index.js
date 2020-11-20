@@ -47,7 +47,7 @@ export default function Pedidos() {
 							<Card 
 							companyName={pedido.empresa}
 							departure={pedido.partida}
-							destination={pedido.destination}
+							destination={pedido.destino}
 							distance={3000}
 							weight={pedido.peso}
 							price={23}
